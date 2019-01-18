@@ -1,7 +1,6 @@
 # cw2vec-pytorch
 
-word2vec原文链接：http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf
-                 https://arxiv.org/pdf/1301.3781.pdf
+word2vec原文链接：http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality.pdf                             https://arxiv.org/pdf/1301.3781.pdf
 
 fasttext原文链接：https://arxiv.org/pdf/1607.04606.pdf
 
@@ -16,10 +15,10 @@ cw2vec可以看做中文版的fasttext，原理上有一部分相似之处。这
 python cw2vec.py resource/data/zhihu.txt resource/model/ resource/data/cw2vec.vec resource/data/word_strokes.txt resource/data/strokes.txt
 
 ## Tips
-1.代码中构建batch的过程与https://blog.csdn.net/mr_tyting/article/details/80091842博客类似，具体可参考此博客
-2.本实现里对数据进行了subsampling，原文中没有提到
-3.本实现参考https://github.com/kefirski/pytorch_NEG_loss中的损失函数
-4.在表示词的时候，本实现使用笔画嵌入的均值与词嵌入的和作为词的表示，此处跟原文有不同
+1. 代码中构建batch的过程与https://blog.csdn.net/mr_tyting/article/details/80091842 博客类似，具体可参考此博客
+2. 本实现里对数据进行了subsampling，原文中没有提到
+3. 本实现参考https://github.com/kefirski/pytorch_NEG_loss 中的损失函数
+4. 在表示词的时候，本实现使用笔画嵌入的均值与词嵌入的和作为词的表示，此处跟原文有不同
 
 ## 后记
 还是希望原文作者可开源一下官方实现，本实现仅供参考，如有疑问可以在issues中留言探讨
